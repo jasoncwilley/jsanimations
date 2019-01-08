@@ -1,25 +1,147 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 100px 300px 300px 300px 100px;
-  grid-template-rows: 125px 300px 1fr;
-  grid-template-areas: "side-a header header header side-b" "side-a image image buttons side-b" "side-a image image buttons side-b";
+  grid-template-columns: 50px 650px 50px 650px 50px;
+  grid-template-rows: 75px 75px 500px 100px;
+  grid-template-areas: "side-a header header header side-c" "side-a catbuttons side-b bearbuttons side-c" "side-a cat side-b bear side-c" "side-a footer footer footer side-c";
 }
-
-.header { grid-area: header; }
 
 .side-a { grid-area: side-a; }
 
+.header { grid-area: header; }
+
+.side-c { grid-area: side-c; }
+
+.catbuttons { grid-area: catbuttons; }
+
+.bearbuttons { grid-area: bearbuttons; }
+
+.cat { grid-area: cat; }
+
+.bear { grid-area: bear; background-color:}
+
 .side-b { grid-area: side-b; }
 
-.buttons { grid-area: buttons; background-color: yellow;}
-
-.image { grid-area: image; background-color: green;}
+.footer { grid-area: footer; }
 
 .buttons {
 position: relative;
 z-index: 10;
 }
 
-.blue-eyes .eyes {
+.blue-eyes .eye-color {
 fill: blue;
+}
+
+.purple-arms .arms {
+  fill: purple;
+
+}
+.stars {
+  fill:white;
+}
+.yellowstar{
+  fill: yellow;
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translate(120px, 175px);
+    transform: rotate3d(25px;)
+  }
+25% {
+    transform: translate(0, 0);
+  }
+50% {
+  transform: translate(-60px, 180px);
+  }
+75% {
+    transform: translate(120px, 0);
+    }
+}
+.move-stars-around .stars {
+animation: moveStars 9s infinite;
+fill: yellow;
+transform: rotate
+}
+.sadcat .catmouth {
+  transform: rotate(180deg) scale(.5);
+  transform-origin: 340px 400px;
+}
+.sadbear .bearmouth {
+  transform: rotate(346deg) scale(0.7);
+  transform-origin: 402px 445px;
+}
+
+
+@keyframes moveEyes {
+  0% {
+    transform: translate(-25px, -24px);
+  }
+40% {
+    transform: translate(0, 0);
+  }
+80% {
+  transform: translate(20px, -25px);
+  }
+}
+
+.move-around .inner-eye-group {
+animation: moveEyes 9s infinite;
+}
+@keyframes leftWhiskers {
+  20% {
+    transform: rotate(5deg);
+  }
+60% {
+  transform: rotate(-5deg);
+}
+}
+
+.move-around .left-whiskers {
+  animation: leftWhiskers 3s infinite;
+  transform-origin: 325px 350px;
+}
+@keyframes rightWhiskers {
+  8% {
+    transform: rotate(-4deg);
+  }
+90% {
+  transform: rotate(2deg);
+}
+}
+.move-around .right-whiskers {
+  animation: rightWhiskers 3s infinite;
+  transform-origin: 325px 350px;
+}
+
+
+@keyframes move {
+ 20% {
+    transform: rotateY(10deg) rotateX(10deg)
+
+  }
+40% {
+  transform: rotateY(25deg) rotateX(10deg)
+  }
+
+60% {
+    transform: rotateY(-10deg) rotateX(-10deg)
+
+  }
+85% {
+    transform: rotateY(25deg) rotateX(10deg)
+  }
+}
+.move-around {
+  animation: move 8s infinite;
+}
+.cat {
+  perspective: 1000px;
+}
+.bears {
+  margin-left: 230px;
+  margin-top: 100px;
+}
+.bear {
+  perspective: 5000px;
 }

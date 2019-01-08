@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FaceChanger</title>
 <!-- Latest compiled and minified CSS -->
@@ -11,80 +12,146 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="styles.css"?
-<head>
+
 
 </head>
 <body>
-<div class="grid-container">
+  <div class="grid-container">
+  <div class="side-a"></div>
   <div class="header">
 <h1>Change My Face</h1>
 </div>
+
+  <div class="side-c"></div>
+
+  <div class="catbuttons">
+    <button data-add="blue-eyes">Blue Eyes</button>
+    <button data-remove="blue-eyes">Green Eyes</button>
+    <button data-add="sadcat">Sad</button>
+    <button data-remove="sadcat">Happy</button>
+    <button data-add="move-around">Move Around</button>
+    <button data-remove="move-around">Sit Still</button>
+  </div>
+
+  <div class="bearbuttons">
+    <button data-add="purple-arms">Purple Eyes</button>
+    <button data-remove="purple-arms">Red Eyes</button>
+    <button data-add="sadbear">Sad</button>
+    <button data-remove="sadbear">Happy</button>
+    <button data-add="move-stars-around">Night Time</button>
+    <button data-remove="move-stars-around">Sit Still</button>
+  </div>
+
+  <div class="cat">
+
+    <svg class="cats" width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <path d="m119.00002,184.5c0,0 11.25,-157.50001 -36,-164.25001c-47.25,-6.75 156,15.75001 159.75,96.00001c3.75,80.25 29.25,-16.5 137.25,-11.25c108.00001,5.25 53.25001,-111.75001 84.00001,-99.00001l30.24997,12.00001c0,0 81.50003,17.25 44.00003,125.25c-37.5,108 -20.25,174.75 -20.75003,174.75c-0.50003,0 47.75003,120.75 79.25003,123.75c31.5,3 -129,-5.25 -132.75,-3c-3.75,2.25 -24.75,22.50001 -77.25001,27.75001c-52.5,5.25 -167.25,-48.00001 -167.75002,-48.00001c-0.50002,0 -152.49998,35.25001 -153,35.25c-0.50002,-0.00001 116.75002,-83.25 108.50002,-107.25c-8.25,-24 -89.25,-87 -71.25,-120.75c18,-33.75 15.75,-41.25 15.75,-41.25z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#999999"/>
+        <g transform="rotate(-10 382.4999999999998,240.99999999999974) ">
+         <ellipse fill="#ffffff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="382.5" cy="240.99998" rx="56.50162" ry="84.75243" transform="rotate(10 382.5000000000002,240.99996948242193) " stroke="#000000"/>
+         <g class="inner-eye-group">
+           <ellipse class="eye-color" fill="#1b6811" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="382.38001" cy="286.68047" rx="31" ry="35"/>
+           <ellipse fill="#ffffff" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="380.38001" cy="303.68047" rx="6" ry="6"/>
+         </g>
+        </g>
+        <g>
+         <ellipse fill="#ffffff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="274.11999" cy="239.31951" rx="56.50162" ry="84.75243" transform="rotate(10 274.1199951171879,239.31950378417977) " stroke="#000000"/>
+         <g class="move-around inner-eye-group">
+         <ellipse class="eye-color" fill="#1b6811" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="274" cy="285" rx="31" ry="35"/>
+         <ellipse fill="#ffffff" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="272" cy="302" rx="6" ry="6"/>
+         </g>
+        </g>
+        <path d="m295,337c2,2 25,-39 64,-7c39,32 8,13 -21,31c-29,18 -45,-26 -43,-24z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#fcbfdb"/>
+        <path d="m236,384c0,0 154,106 224,17c70,-89 -203,-2 -203,-2c0,0 -21,-15 -21,-15z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="none"/>
+        <path class="catmouth" stroke="#000000" stroke-width="0" d="m248.03582,375.86192c26.65347,15.01979 95.78592,70.09234 209.06318,-1.66887c113.27726,-71.7612 0,10.84762 0,10.84762c0,0 -138.26489,80.93996 -214.89363,-1.66887c-76.62874,-82.60883 -20.82303,-22.52968 5.83045,-7.50989l0,0.00001z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="#000000" />
+        <g class="left-whiskers">
+        <line y2="301" x2="102" y1="353" x1="297" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#DDDDDD" fill="none"/>
+        <line fill="none" stroke="#DDDDDD" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="105" y1="344" x2="300" y2="358" />
+        </g>
+
+        <g class="right-whiskers">
+        <line fill="none" stroke="#DDDDDD" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="354" y1="361" x2="571" y2="296" />
+        <line y2="364" x2="363" y1="373" x1="556" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" stroke="#DDDDDD" fill="none"/>
+        </g>
+      </svg>
+    </div>
+
+  <div class="bear">
+
+    <svg class="bears"width="210" height="297" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+     <metadata>image/svg+xml</metadata>
+
+     <g class="layer">
+      <g class="stars"fill="#ff0" id="svg_1" stroke-width="0.26458">
+       <path class="yellowstar" d="m20.847,39.352l-7.4965,-5.0083l-8.6284,2.6136l2.4467,-8.6773l-5.152,-7.3985l9.0086,-0.35452l5.4443,-7.1861l3.121,8.4582l8.5168,2.9572l-7.0798,5.582l-0.1807,9.01372z" id="svg_2"/>
+       <path class="yellowstar" d="m56.566,57.169l-7.4965,-5.0083l-8.6284,2.6136l2.4467,-8.6773l-5.152,-7.3985l9.0086,-0.35452l5.4443,-7.1861l3.121,8.4582l8.5168,2.9572l-7.0798,5.582l-0.1807,9.01372z" id="svg_3"/>
+       <path class="yellowstar" d="m89.173,34.718l-7.4965,-5.0083l-8.6284,2.6136l2.4467,-8.6773l-5.152,-7.3985l9.0086,-0.35452l5.4443,-7.1861l3.121,8.4582l8.5168,2.9572l-7.0798,5.5819l-0.1807,9.01382z" id="svg_4"/>
+       <path class="yellowstar" d="m193.41,62.514l-7.4965,-5.0083l-8.6284,2.6136l2.4467,-8.6773l-5.152,-7.3985l9.0086,-0.35452l5.4443,-7.1861l3.121,8.4582l8.5168,2.9572l-7.0798,5.5819l-0.1807,9.01382z" id="svg_5"/>
+       <path class="yellowstar" d="m160.27,35.787l-7.4965,-5.0083l-8.6284,2.6136l2.4466,-8.6773l-5.152,-7.3985l9.0086,-0.35452l5.4443,-7.1861l3.121,8.4582l8.5168,2.9572l-7.0798,5.5819l-0.1806,9.01382z" id="svg_7"/>
+      </g>
+      <ellipse cx="99.692" cy="164.17" fill="#ccc" id="svg_8" rx="53.187" ry="43.03" stroke-width="0.28373"/>
+      <g id="svg_9" stroke-width="0.26458">
+       <ellipse cx="82.319" cy="149.73" fill="#fff" id="svg_10" rx="9.6217" ry="13.096"/>
+       <ellipse cx="117.6" cy="148.93" fill="#fff" id="svg_11" rx="9.6217" ry="13.096"/>
+       <ellipse cx="83.923" cy="151.07" id="svg_12" rx="5.3454" ry="6.949"/>
+       <ellipse cx="118.13" cy="150.54" id="svg_13" rx="5.3454" ry="6.949"/>
+      </g>
+      <g fill="#fff" id="svg_14" stroke-width="0.26458">
+       <ellipse cx="84.724" cy="153.21" id="svg_15" rx="2.4054" ry="2.1382"/>
+       <ellipse cx="139.51" cy="209.34" id="svg_16" rx="2.4054" ry="2.1382"/>
+       <ellipse cx="119.74" cy="152.67" id="svg_17" rx="2.4054" ry="2.1382"/>
+       <ellipse cx="119.2" cy="152.41" id="svg_18" rx="1.0691" ry="0.26727"/>
+      </g>
+      <g class="ears" id="svg_19" stroke-width="0.26458">
+       <circle class="arms" cx="65.748" cy="123.27" id="svg_20" r="12.829"/>
+       <circle class="arms"cx="133.1" cy="122.74" id="svg_21" r="12.829"/>
+       <ellipse  class="body" cx="103.17" cy="240.34" fill="#ccc" id="svg_22" rx="69.49" ry="41.16"/>
+       <ellipse class="arms"cx="100.49" cy="168.98" id="svg_23" rx="14.967" ry="7.7508"/>
+      </g>
+      <g fill="none" id="svg_24" stroke="#000" stroke-width="0.26458px">
+       <path d="m100.49,178.33l0,18.709" id="svg_25"/>
+       <path d="m125.08,181.01l-24.589,16.036" id="svg_26"/>
+       <path d="m100.49,197.04l-27.261,-14.433" id="svg_27"/>
+      </g>
+      <g id="svg_28" stroke-width="0.26458">
+       <ellipse cx="58.799" cy="212.01" id="svg_29" rx="22.985" ry="14.967"/>
+       <ellipse cx="141.65" cy="210.4" id="svg_30" rx="22.985" ry="14.967"/>
+       <ellipse cx="69.49" cy="274.28" id="svg_31" rx="30.469" ry="22.183"/>
+       <ellipse cx="145.39" cy="275.08" id="svg_32" rx="30.469" ry="22.183"/>
+      </g>
+      <ellipse cx="69.223" cy="276.69" fill="#fff" id="svg_33" rx="22.183" ry="19.778" stroke-width="0.26458"/>
+      <ellipse cx="146.46" cy="277.76" fill="#fff" id="svg_34" rx="22.183" ry="19.243" stroke-width="0.26458"/>
+     </g>
+    </svg>
+
+</div>
+
+
+
+  <div class="side-b"></div>
+
+  <div class="footer">
+<h1>fotter</h1>
+  </div>
+</div>
+
+
 
   <div class="side-a"></div>
   <div class="side-b"></div>
 
 
-  <div class="buttons">
-
-<button data-add="blue-eyes">Blue Eyes</button>
-<button data-remove="blue-eyes">Red Eyes</button>
-
-</div>
 
 
-  <div class="image">
-
-<svg class="graphic" width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
- <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
- <defs>
-  <linearGradient id="svg_2" spreadMethod="pad" x1="1" x2="0.225" y1="0.00781" y2="0.90625">
-   <stop offset="0" stop-color="#FF0000"/>
-   <stop offset="1" stop-color="#00ffff"/>
-  </linearGradient>
-  <linearGradient id="svg_3" spreadMethod="pad" x1="1" x2="0.225" y1="0.00781" y2="0.90625">
-   <stop offset="0" stop-color="#FF0000"/>
-   <stop offset="1" stop-color="#00ffff"/>
-  </linearGradient>
-  <radialGradient cx="0.50625" cy="0.53906" id="svg_10" r="0.5" spreadMethod="pad">
-   <stop offset="0" stop-color="#FF0000"/>
-   <stop offset="0.36953" stop-color="#00ffff"/>
-  </radialGradient>
-  <radialGradient cx="0.50625" cy="0.53906" id="svg_16" r="0.5" spreadMethod="pad">
-   <stop offset="0.35" stop-color="#FF0000"/>
-   <stop offset="0.56094" stop-color="#00ffff"/>
-   <stop offset="0.75234" stop-color="#FF0000"/>
-  </radialGradient>
-  <radialGradient id="svg_13" spreadMethod="pad">
-   <stop offset="0" stop-color="#000000"/>
-   <stop offset="1" stop-color="#ffffff"/>
-  </radialGradient>
-  <linearGradient id="svg_15" spreadMethod="pad" x2="0.955469" y2="0.761719">
-   <stop offset="0.416406" stop-color="#00ffff"/>
-   <stop offset="0.771875" stop-color="#ff0000"/>
-  </linearGradient>
- </defs>
- <g class="layer">
-  <title>Layer 1</title>
-  <circle class="face" cx="379.99999" cy="311.99999" fill="url(#svg_2)" id="svg_1" r="179.87775" stroke="#000000" stroke-width="5"/>
-  <polygon class="ears" fill="url(#svg_3)" id="svg_4" points="269.92230224609375,163.5 226.78955078125,222.86712646484375 156.9993133544922,200.19090270996094 156.9993133544922,126.80909729003906 226.78955078125,104.13287353515625 269.92230224609375,163.5 " stroke="#000000" stroke-width="5" transform="rotate(4.21216, 213.461, 163.5)"/>
-  <polygon class="ears" fill="url(#svg_3)" id="svg_6" points="611.3089599609375,159.52102661132812 568.1762084960938,218.88815307617188 498.385986328125,196.21192932128906 498.385986328125,122.83012390136719 568.1762084960938,100.15390014648438 611.3089599609375,159.52102661132812 " stroke="#000000" stroke-width="5" transform="rotate(29.1755, 554.847, 159.521)"/>
-  <polygon class="eyes" fill="url(#svg_10)" id="svg_7" points="298.5000013113022,197.00238041499688 313.0678431733104,241.111130299676 357.4281942719135,242.062563272415 322.07128475848367,270.27470225532306 334.91963728100745,314.97146987861925 298.5000013113022,288.2987816070672 262.0803653415969,314.97146987861925 274.9287178641207,270.27470225532306 239.57179269334847,242.062563272415 283.932159449294,241.111130299676 298.5000013113022,197.00238041499688 313.0678431733104,241.111130299676 " stroke="#000000" stroke-width="5"/>
-  <polygon class="eyes" fill="url(#svg_10)" id="svg_11" points="449.5,198.0154571533203 464.0678405761719,241.00250244140625 508.4281921386719,241.9297332763672 473.0712890625,269.4244079589844 485.9196472167969,312.98455810546875 449.5,286.99017333984375 413.0803527832031,312.98455810546875 425.9287109375,269.4244079589844 390.57177734375,241.9297332763672 434.9321594238281,241.00250244140625 449.5,198.0154571533203 464.0678405761719,241.00250244140625 " stroke="#000000" stroke-width="5"/>
-  <circle class="nose" cx="375" cy="351" fill="url(#svg_16)" id="svg_12" r="40.0235" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
-  <path class="mouth" d="m294.5,384.499996c0,0 87,49.12847 76,77.886599c-11,28.758129 112,-44.335449 116,-38.344172c4,5.991277 -192,-39.542427 -192,-39.542427z" fill="url(#svg_15)" id="svg_9" stroke="url(#svg_13)" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" transform="rotate(-17.7899, 390.53, 426.808)"/>
- </g>
-</svg>
-</div>
 </div>
 
 <script>
-var btns = document.querySelectorAll(".buttons button");
-var graphic = document.getElementsByClassName("graphic")[0];
+var btns = document.querySelectorAll(".catbuttons button");
+var graphic = document.getElementsByClassName("cats")[0];
 
 for (i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", manageGraphicClasses);
+  btns[i].addEventListener("click", manageCatGraphicClasses);
 }
-function manageGraphicClasses() {
+function manageCatGraphicClasses() {
 if (this.getAttribute("data-add")) {
   graphic.classList.add(this.getAttribute("data-add"));
    }
@@ -92,6 +159,21 @@ if (this.getAttribute("data-remove")) {
   graphic.classList.remove(this.getAttribute("data-remove"));
    }
 }
+var bearbtns = document.querySelectorAll(".bearbuttons button");
+var beargraphic = document.getElementsByClassName("bears")[0];
+
+for (i = 0; i < bearbtns.length; i++) {
+  bearbtns[i].addEventListener("click", manageBearGraphicClasses);
+}
+function manageBearGraphicClasses() {
+if (this.getAttribute("data-add")) {
+  beargraphic.classList.add(this.getAttribute("data-add"));
+   }
+if (this.getAttribute("data-remove")) {
+  beargraphic.classList.remove(this.getAttribute("data-remove"));
+   }
+}
+
 </script>
 </body>
 <html>
